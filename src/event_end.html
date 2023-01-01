@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html')
+<body class="page_body">
+	<div class="page_wrap">
+		<div class="guide_low"><a href="javascript:;" onclick="shinhanEvent.dimLayerShow({'target':'#target01'});" class="btn_guidecall">레이어팝업호출</a></div>
+		<script>
+			$(function () {
+				// trigger
+				shinhanEvent.dimLayerShow({ 'target': '#target01' });
+			});
+		</script>
+		<!-- -->
+		<div class="dlayer_z" id="target01">
+			<div class="dlayer_bg"></div>
+			<div class="dlayer_box_z">
+				<div class="dlayer_box_w">
+					<div class="dlayer_box">
+						<div class="dlayer_cont_low">
+							<div class="dcm_cont_w">
+								<div class="dcm_contlow only_mess">
+									<p class="dcm_cpara">이벤트가 종료되었습니다.</p>
+									<p class="dcm_cpara_sub">행운 가득한 2023년 되세요</p>
+								</div>
+							</div>
+							<div class="btn_dsm_w">
+								<div class="btn_dsmtb_w">
+									<div class="btn_dsmtb">
+										<a href="javascript:;" class="btn_dsmtd closetrigger">확인</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // -->
+	</div>
+</body>
+
+</html>
