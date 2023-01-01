@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
 @@include('./include/head.html')
-<body class="landing_body">
-    <div class="landing_wrap">
-		
-    </div>
-
-
-	<script>
-        // 코딩전달용 모드 설정
-        $(function(){
-            var url = window.location.href.split('?')[1];
-            var url_2 = url !== undefined ? url.split('#')[0] : null;
-            
-        });
-
-
-		$(window).on("load",function(){
-			
-		});
-    </script>
+<body class="page_body">
+	<div class="page_wrap">
+		<div class="guide_low"><a href="javascript:;" onclick="shinhanEvent.dimLayerShow({'target':'#target01'});" class="btn_guidecall">레이어팝업호출</a></div>
+		<script>
+			$(function () {
+				// trigger
+				shinhanEvent.dimLayerShow({ 'target': '#target01' });
+			});
+		</script>
+		<!-- 3등 신세계 백화점 모바일 상품권 -->
+		<div class="dlayer_z" id="target01">
+			<div class="dlayer_bg"></div>
+			<div class="dlayer_box_z">
+				<div class="dlayer_box_w">
+					<div class="dlayer_box result_box">
+						<div class="result_title_copy_group">
+							<p class="result_title_main_copy"><span class="title_main_incopy">축하합니다!!</span></p>
+							<div class="result_title_sub_copy_g"><p class="result_title_sub_copy"><span class="title_sub_incopy">3등경품</span></p></div>
+						</div>
+						<div class="result_img_group"><img src="./images/celebrate_product_03.png" alt=""></div>
+						<div class="result_content_copy_group">
+							<p class="result_content_maincopy"><strong class="emp_text">신세계 백화점 모바일 상품권</strong>당첨 되셨습니다!</p>
+							<p class="result_content_subcopy">경품은 <span class="emp_text">2월 말경 개별 연락 후 발송</span>됩니다</p>
+							<p class="result_content_elsecopy">한 번 더 참여하고 싶다면<br>친구에게 이벤트를 공유해보세요</p>
+						</div>
+						<div class="btn_bottombox_group_wrap">
+							<div class="btn_bottombox_group">
+								<a href="#" class="btn_bottombox"><span class="bottombox_intext">새해 운세<br>보러가기</span></a>
+								<a href="#" class="btn_bottombox type2"><span class="bottombox_intext">카카오톡<br>공유하기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 3등 신세계 백화점 모바일 상품권 -->
+	</div>
 </body>
+
 </html>

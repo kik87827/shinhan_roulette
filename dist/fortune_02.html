@@ -13,25 +13,44 @@
 	<title></title>
 </head>
 
-<body class="landing_body">
-	<div class="landing_wrap">
-
+<body class="page_body">
+	<div class="page_wrap">
+		<div class="guide_low"><a href="javascript:;" onclick="shinhanEvent.dimLayerShow({'target':'#target01'});" class="btn_guidecall">레이어팝업호출</a></div>
+		<script>
+			$(function() {
+				// trigger
+				shinhanEvent.dimLayerShow({
+					'target': '#target01'
+				});
+			});
+		</script>
+		<!-- 1등 디올반지갑 -->
+		<div class="dlayer_z" id="target01">
+			<div class="dlayer_bg"></div>
+			<div class="dlayer_box_z">
+				<div class="dlayer_box_w">
+					<div class="dlayer_box result_box">
+						<div class="result_title_copy_group">
+							<p class="result_title_main_copy type2"><span class="title_main_incopy">운세 이용권!</span></p>
+						</div>
+						<div class="result_img_group type2"><img src="./images/bok_img.png" alt=""></div>
+						<div class="result_content_copy_group">
+							<p class="result_content_maincopy type2">올해 <strong class="emp_text">나의 신년운세</strong>는?</p>
+							<p class="result_content_subcopy type2">응모기회가 아직 남았습니다<br>(1일 최대 3회 가능)</p>
+							<p class="result_content_elsecopy">이벤트를 공유하면 룰렛 기회를<br>한 번 더! 드립니다</p>
+						</div>
+						<div class="btn_bottombox_group_wrap">
+							<div class="btn_bottombox_group">
+								<a href="#" class="btn_bottombox"><span class="bottombox_intext">새해 운세<br>보러가기</span></a>
+								<a href="#" class="btn_bottombox type2"><span class="bottombox_intext">카카오톡<br>공유하기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 1등 디올반지갑 -->
 	</div>
-
-
-	<script>
-		// 코딩전달용 모드 설정
-		$(function() {
-			var url = window.location.href.split('?')[1];
-			var url_2 = url !== undefined ? url.split('#')[0] : null;
-
-		});
-
-
-		$(window).on("load", function() {
-
-		});
-	</script>
 </body>
 
 </html>
