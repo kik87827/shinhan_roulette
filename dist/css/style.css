@@ -476,7 +476,7 @@ input.pfm_vint.pctype2::input-placeholder{text-align:center;color:#4d4d4d;}
 /* landing */
 .landing_primary_zone{text-align: center;max-width:720px;margin:0 auto;}
 .landing_primary_zone img{vertical-align: top;}
-.landing_primary_mid{position:relative;}
+.landing_primary_mid{position:relative;overflow:hidden;}
 .landing_bg{font-size:0;line-height:0;}
 .landing_bg img{vertical-align: top;}
 .landing_layer_obj_group{position:absolute;top:0;left:0;width:100%;}
@@ -488,7 +488,7 @@ input.pfm_vint.pctype2::input-placeholder{text-align:center;color:#4d4d4d;}
 .design_obj img{width:100%;height:auto;}
 
 .roullet_img_zone{position:relative;max-width:650px;margin:0 auto;}
-.roullet_img{}
+.roullet_img{transform: rotate(-30.5deg);}
 .roullet_img img{vertical-align: top;}
 .btn_play_start{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);width:125px;height:122px;background:url("../images/btn_roulette_go.png") no-repeat 50% 50%/100% auto;}
 .roullet_pointer{display:inline-block;position:absolute;top:11px;left:50%;transform: translateX(-50%);width:58px;height:81px;}
