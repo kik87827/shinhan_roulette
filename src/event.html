@@ -15,14 +15,24 @@
 						<p class="lading_copy_sub">(1일 최대 3회 가능)</p>
 					</div>
 					<div class="roullet_img_zone">
+						<div class="roullet_bg">
+							<img src="./images/roullet_img_bg.png" alt="">
+						</div>
 						<div class="roullet_img">
 							<img src="./images/roullet_img.png" alt="">
+						</div>
+						<div class="roullet_light">
+							<img src="./images/roullet_img_y.png" class="light_y" alt="">
+							<img src="./images/roullet_img_f.png" class="light_f" alt="">
 						</div>
 						<button type="button" class="btn_play_start"></button>
 						<span class="roullet_pointer"><img src="./images/roullet_pointer.png" alt=""></span>
 					</div>
 				</div>
-				<div class="design_obj"><img src="./images/rabit_obj.png" alt=""></div>
+				<div class="design_obj">
+					<img src="./images/rabit_obj.png" class="before" alt="">
+					<img src="./images/rabit_jump.png" class="after" alt="">
+				</div>
 			</div>
 			<div class="landing_guide_wrap">
 				<div class="guide_box_group">
@@ -96,6 +106,9 @@
 		  $('.btn_play_start').on('click',function(){
 			start();
 		  });
+		  setInterval(()=>{
+			$(".design_obj").toggleClass("active");
+		  },300)
 		})
 		
 		function start(){
