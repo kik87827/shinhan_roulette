@@ -19,6 +19,16 @@
 		<div class="landing_primary_zone">
 			<div class="landing_primary_top">
 				<img src="./images/event_topimg.jpg" alt="">
+				<div class="landing_start_layer_group">
+					<img src="./images/title_star01.png" alt="">
+					<img src="./images/title_star02.png" alt="">
+					<img src="./images/title_star03.png" alt="">
+					<img src="./images/title_star04.png" alt="">
+					<img src="./images/title_star05.png" alt="">
+					<img src="./images/title_star06.png" alt="">
+					<img src="./images/title_star07.png" alt="">
+					<img src="./images/title_star08.png" alt="">
+				</div>
 			</div>
 			<div class="landing_primary_mid">
 				<div class="landing_bg"><img src="./images/bg_event_full.png" alt=""></div>
@@ -35,16 +45,37 @@
 							<img src="./images/roullet_img.png" alt="">
 						</div>
 						<div class="roullet_light">
-							<img src="./images/roullet_img_y.png" class="light_y" alt="">
-							<img src="./images/roullet_img_f.png" class="light_f" alt="">
+							<img src="./images/circle_light_01.png" class="light_cir" alt="">
+							<img src="./images/circle_light_02.png" class="light_cir" alt="">
+							<img src="./images/circle_light_03.png" class="light_cir" alt="">
+							<img src="./images/circle_light_04.png" class="light_cir" alt="">
+							<img src="./images/circle_light_05.png" class="light_cir" alt="">
+							<img src="./images/circle_light_06.png" class="light_cir" alt="">
+							<img src="./images/circle_light_07.png" class="light_cir" alt="">
+							<img src="./images/circle_light_08.png" class="light_cir" alt="">
+							<img src="./images/circle_light_09.png" class="light_cir" alt="">
+							<img src="./images/circle_light_10.png" class="light_cir" alt="">
+							<img src="./images/circle_light_11.png" class="light_cir" alt="">
+							<img src="./images/circle_light_12.png" class="light_cir" alt="">
+							<img src="./images/circle_light_13.png" class="light_cir" alt="">
+							<img src="./images/circle_light_14.png" class="light_cir" alt="">
+							<img src="./images/circle_light_15.png" class="light_cir" alt="">
+							<img src="./images/circle_light_y_g.png" class="light_yg" alt="">
+							<img src="./images/circle_light_p_g.png" class="light_pg" alt="">
+							<img src="./images/circle_light_y_g.png" class="light_yg" alt="">
+							<img src="./images/circle_light_p_g.png" class="light_pg" alt="">
+							<img src="./images/circle_light_y_g.png" class="light_yg" alt="">
+							<img src="./images/circle_light_p_g.png" class="light_pg" alt="">
 						</div>
 						<button type="button" class="btn_play_start"></button>
 						<span class="roullet_pointer"><img src="./images/roullet_pointer.png" alt=""></span>
 					</div>
 				</div>
 				<div class="design_obj">
-					<img src="./images/rabit_obj.png" class="before" alt="">
-					<img src="./images/rabit_jump.png" class="after" alt="">
+					<img src="./images/rabit_img_01.png" id="scene_01" alt="">
+					<img src="./images/rabit_img_02.png" id="scene_02" alt="">
+					<img src="./images/rabit_img_03.png" id="scene_03" class="jump" alt="">
+					<img src="./images/rabit_img_04.png" id="scene_04" alt="">
 				</div>
 			</div>
 			<div class="landing_guide_wrap">
@@ -55,11 +86,11 @@
 							<div class="guide_tb">
 								<div class="guide_tr">
 									<div class="guide_th"><span class="guide_thtext">이벤트 기간:</span></div>
-									<div class="guide_td"><span class="guide_tdtext">1월 18일 - 2월 10일</span></div>
+									<div class="guide_td"><span class="guide_tdtext">1월 18일 ~ 2월 10일</span></div>
 								</div>
 								<div class="guide_tr">
 									<div class="guide_th"><span class="guide_thtext">당첨자 발표:</span></div>
-									<div class="guide_td"><span class="guide_tdtext">2월 말경</span></div>
+									<div class="guide_td"><span class="guide_tdtext">당첨 후 개별 연락</span></div>
 								</div>
 							</div>
 						</div>
@@ -101,6 +132,7 @@
 							</ul>
 						</li>
 					</ul>
+					<p class="ldue_vpara">제작 디지털플렛폼챕터 | 준법감시인 심의필 202301-39(2023.1.18-2023.2.31)</p>
 				</div>
 			</div>
 		</div>
@@ -290,10 +322,56 @@
 			$('.btn_play_start').on('click', function() {
 				start();
 			});
-			setInterval(() => {
-				$(".design_obj").toggleClass("active");
-			}, 300)
-		})
+
+			function rabitFunc() {
+				const rabit = document.querySelectorAll(".design_obj > img");
+
+				let count = 0;
+				let activeItem = null;
+
+				function frameAction() {
+					if (count > rabit.length - 1) {
+						count = 0;
+					}
+					if (activeItem) {
+						activeItem.classList.remove("active");
+					}
+					rabit[count].classList.add("active");
+					activeItem = rabit[count];
+					count++;
+				}
+
+				setInterval(() => {
+					frameAction();
+				}, 180);
+			}
+			rabitFunc();
+
+
+			function lightCircleFunc() {
+				const lightCircle = document.querySelectorAll(".roullet_light > img");
+
+				let count = 0;
+				let activeItem = null;
+
+				function frameAction() {
+					if (count > lightCircle.length - 1) {
+						count = 0;
+					}
+					if (activeItem) {
+						activeItem.classList.remove("active");
+					}
+					lightCircle[count].classList.add("active");
+					activeItem = lightCircle[count];
+					count++;
+				}
+
+				setInterval(() => {
+					frameAction();
+				}, 150);
+			}
+			lightCircleFunc();
+		});
 
 		function start() {
 			angle = prize.rnd(0, prize.number - 1) * (360 / prize.number);
@@ -308,7 +386,7 @@
 				angle: 0,
 				animateTo: v + 360 * 2,
 				easing: $.easing.easeInOutElastic,
-				duration: 3000,
+				duration: 2000,
 				callback: function() {
 					pr = prize.get(angle);
 					console.log("prize " + pr);
