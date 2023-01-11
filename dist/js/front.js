@@ -36,7 +36,7 @@ shinhanEvent = {
 			touchIs = "ontouchstart" in window,
 			$modal = $(".dlayer_z");
 		if ($modal.length === 0) { return; }
-		$modal.on("click", ".dlayer_bg , .btn_dlayerclose,.closetrigger", function (e) {
+		$modal.on("click", ".dlayer_bg , .btn_popup_close,.closetrigger", function (e) {
 			var $this = $(this),
 				$t_p = $this.parents(".dlayer_z");
 			e.preventDefault();
