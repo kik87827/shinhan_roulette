@@ -88,7 +88,7 @@
 .btn_bottombox_group_wrap.type2{margin-bottom:60px;}
 .btn_bottombox_group{display:flex;margin:-5px;}
 .btn_bottombox{flex:1;margin:5px;border-radius:18px;background:#705dcf;padding:15px;display:flex;justify-content: center;align-items: center;}
-.bottombox_intext{color:#fff;font-size:32px;line-height:1.3;font-weight:700;}
+.bottombox_intext{color:#fff;font-size:33px;line-height:1.3;font-weight:700;}
 .btn_bottombox.type2{background:#fae100;}
 .btn_bottombox.type2:before{margin-right:20px;display:block;content:'';width:65px;height:60px;background:url("../images/ico_kakao.png") no-repeat 0 0/100% auto;flex:0 0 65px;}
 .btn_bottombox.type2 .bottombox_intext{color:#3c1d1e;}
@@ -171,7 +171,7 @@
 	.btn_bottombox_group_wrap.type2{margin-bottom:8.333vw;}
 	.btn_bottombox_group{margin:-0.694vw;}
 	.btn_bottombox{margin:0.694vw;border-radius:2.500vw;padding:2.9vw;}
-	.bottombox_intext{font-size:3.611vw;}
+	.bottombox_intext{font-size:4.583vw;}
 	.btn_bottombox.type2:before{margin-right:2.778vw;width:9.028vw;height:8.333vw;flex:0 0 9.028vw;}
 	.btn_bottombox.type3:before{margin-right:2.778vw;width:9.028vw;height:8.333vw;flex:0 0 9.028vw;}
 
